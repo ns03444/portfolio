@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+    <h1>Upload new File</h1>
+    <!-- <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form> -->
+    <br>
+  <div class="container">
+    <form class="form-group" method="POST" enctype="multipart/form-data">
+      {{form.hidden_tag()}}
+      <div class="form-group">
+        {{form.title.label(class="form-control-label")}}
+        {{form.title(class="form-control form-control-lg")}}
+      </div>
+      <br>
+      <div class="form-group">
+        {{form.description.label(class="form-control-label")}}
+        {{form.description(class="form-control form-control-lg")}}
+      </div>
+      <br>
+      <div class="form-group">
+        {{form.file.label(class="form-control-label")}}
+        {{form.file(class="form-control form-control-lg")}}
+      </div>
+      <br>
+      <div class="form-group">
+        {{form.submit(class="btn btn-outline-info")}}
+      </div>
+      <br>
+    </form>
+  </div>
+</body>
+</html>
+{% endblock %}

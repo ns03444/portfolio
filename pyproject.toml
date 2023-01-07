@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "portfolio"
+version = "0.1.0"
+description = "Portfolio - January 2023"
+authors = ["ns03444"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.2.2"
+email-validator = "^1.3.0"
+Flask-Login = "^0.6.2"
+Flask-Migrate = "^4.0.1"
+flask-sqlalchemy = "^3.0.2"
+Flask-WTF = "^1.0.1"
+WTForms = "^3.0.1"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
