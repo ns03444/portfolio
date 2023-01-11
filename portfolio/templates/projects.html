@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+<h1>My Projects</h1>
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+        <br>
+        <a class="card-title text-decoration-none" href="https://github.com">Python Package: Network Automation Utilities</a>.
+        <p class="card-text">There are many Python packages available that can be used to aid network automation developers in their work. One such package is the 
+            "netutils" package, which contains a variety of utilities that can be used to automate various network tasks. This package is designed to make it easy for 
+            developers to access and use common network tools and protocols, such as ping, traceroute, SSH, and SNMP, within their Python scripts. With the "netutils" 
+            package, developers can easily write scripts to automate tasks such as network configuration, monitoring, and troubleshooting. Whether you are a beginner or 
+            an experienced network automation developer, the "netutils" package can help you streamline your workflow and increase your productivity.</p>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+            <br>
+            <a class="card-title text-decoration-none" href="https://github.com">Ansible Development</a>.
+            <p class="card-text">Ansible is a powerful open-source tool that can be used for automating various IT tasks, including network configuration and management. 
+                With Ansible, you can easily automate the deployment, configuration, and management of your network infrastructure, saving time and reducing the risk of 
+                errors. If you are new to ansible and are interested in learning how to use it for network automation, this tutorial will provide you with a solid 
+                foundation. You will learn the basics of ansible, including how to install and set up your environment, how to write and execute ansible playbooks, and 
+                how to use ansible modules to automate common network tasks. By the end of this tutorial, you will have a good understanding of how to use ansible for
+                 network automation and be able to start automating your own tasks.</p>
+        </div>
+        </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                <br>
+                <a class="card-title text-decoration-none" href="https://github.com">Flask Application: Blog Website</a>.
+                <p class="card-text">Recently, I developed a Flask application that includes various features such as user authentication, database integration, file 
+                    upload, and rendering templates. The app is configured to use a database (SQLite), and it has defined models for users and blog posts, which are 
+                    connected through a relationship. The code also includes form classes for handling user input and validation, as well as routes for handling HTTP 
+                    requests and rendering templates. Finally, the code includes a file upload function that allows users to upload files with certain allowed 
+                    extensions.</p>
+            </div>
+            </div>
+            </div>
+            <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+            <br>
+                <a class="card-title text-decoration-none" href="https://github.com">Django Application: Content Aggregator</a>.
+                <p class="card-text">Developed a “content aggregator” for technology related stock market news and performance data which was deployed to the cloud using Git and Python Anywhere that dynamically updates once
+                    every hour. I began by using the Beautiful Soup (bs4) and Requests dependencies to web-scrape
+                    unformatted data from various websites. Then, the front end was developed using the Django frontend
+                    framework along with Bootstrap HTML and CSS to present my scraped content, along with an
+                    SQLite3 backend database for handling, serving, updating, etc. the content of the site. Next, I
+                    manipulated/created calculated columns in a pandas data-frame of open/close prices for the S&P 500
+                    to create interactive candlestick charts with Bokeh embedded into a Bootstrap template. Finally, I
+                    conducted an in-depth financial analysis of the 3 largest wireless network carriers in America by
+                    using the yFinance and Matplotlib python libraries. The yFinance library was implemented to collect
+                    the close price, volume, volatility, market capitalization, Beta, price-to-earnings ratio, dividend yield.
+                    Then, I integrated the data into a single data-frame and used Matplotlib to create various
+                    visualizations (line graphs, bar charts, histograms). Last, I used the visualizations to provide an
+                    educated conclusion (not investment advice).</p>
+                </div>
+                </div>
+                </div>
+                <br>
+</body>
+</html>
+{% endblock %}
