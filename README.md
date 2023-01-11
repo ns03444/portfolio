@@ -7,8 +7,9 @@ This Flask application serves as my portfoliio and is currently hosted on Heroku
 
 
 ### Login to Heroku
-```
+
 nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `heroku login`
+```
 heroku: Press any key to open up the browser to login or q to exit: 
 Opening browser to https://cli-auth.heroku.com/auth/cli/browser/3e9f26e3-c014-43c9-8035-a3d4fb742093?requestor=SFMyNTY.g2gDbQAAAAw0Ny4zOS4xNDcuMTluBgBQqxyihQFiAAFRgA.W1XESGkTSiuLy9JNB-YLXs_yGB5Jgl2wvSrfsYHN_OY
  ›   Warning: Cannot open browser.
@@ -19,26 +20,36 @@ nick@DESKTOP-A7K2DC1:~/projects/portfolio$
 
 ```
 ### Heroku Configuration
-```
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `heroku git:remote -a portfolio-v1`
+```
 set git remote heroku to https://git.heroku.com/portfolio-v1.git
+```
+
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `heroku buildpacks:clear`
+```
 Buildpacks cleared. Next release on portfolio-v1 will detect buildpacks normally.
+```
+
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `heroku buildpacks:add https://github.com/moneymeets/python-poetry-buildpack.git`
+```
 Buildpack added. Next release on portfolio-v1 will use https://github.com/moneymeets/python-poetry-buildpack.git.
 Run git push heroku main to create a new release using this buildpack.
+```
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `heroku buildpacks:add heroku/python`
+```
 Buildpack added. Next release on portfolio-v1 will use:
   1. https://github.com/moneymeets/python-poetry-buildpack.git
   2. heroku/python
 Run git push heroku main to create a new release using these buildpacks.
+```
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `git add .`
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `git commit -am 'updates app'`
-```
+
 
 ### Deployment
-```
+
 (portfolio-py3.10) nick@DESKTOP-A7K2DC1:~/projects/portfolio$ `git push heroku master`
+```
 Enumerating objects: 86, done.
 Counting objects: 100% (85/85), done.
 Delta compression using up to 4 threads
