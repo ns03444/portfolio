@@ -6,7 +6,7 @@ authors = ["ns03444"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10.4"
+python = "^3.10"
 Flask = "^2.2.2"
 email-validator = "^1.3.0"
 Flask-Login = "^0.6.2"
